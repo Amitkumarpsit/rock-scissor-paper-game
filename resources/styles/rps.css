@@ -1,0 +1,19 @@
+body{
+  background-color: aquamarine;
+}
+table th {
+  background-color: blueviolet;
+  color: white;
+}
+table td {
+  background-color: wheat;
+}
+button img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+button {
+  background-color: transparent;
+  border: none;
+}

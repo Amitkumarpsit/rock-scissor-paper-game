@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="resources/images/favicon.ico">
+  <link rel="stylesheet" href="resources/styles/rps.css">
+  <title>RPS Game</title>
+</head>
+<body>
+  <h1>Rock Paper Scissors</h1>
+  <button onclick="playGame('Rock')">
+    <img src="resources/images/rock.png" alt="">
+  </button>
+  <button onclick="playGame('Paper')">
+    <img src="resources/images/paper.png" alt="">
+  </button>
+  <button onclick="playGame('Scissors')">
+    <img src="resources/images/scissors.png" alt="">
+  </button>
+  <button onclick="
+  resetScores();
+  renderGameSummary();
+  renderGameHistory();
+  ">
+    <img src="resources/images/reset.jpg" alt="">
+  </button>
+  <h1>Game Summary</h1>
+  <table>
+    <tr>
+      <th>Wins</th>
+      <th>Looses</th>
+      <th>Ties</th>
+      <th>Games Played</th>
+    </tr>
+    <tr>
+      <td id = "wins">0</td>
+      <td id = "looses">0</td>
+      <td id = "ties">0</td>
+      <td id = "gamesPlayed">0</td>
+    </tr>
+  </table>
+
+  <h1>Game History</h1>
+  <table id = "gameHistory">
+    <tr>
+      <th>#</th>
+      <th>User Move</th>
+      <th>Computer Move</th>
+      <th>Result</th>
+    </tr>
+  </table>
+  <script src="resources/scripts/rps.js"></script>
+</body>
+</html>
